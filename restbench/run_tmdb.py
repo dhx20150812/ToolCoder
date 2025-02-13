@@ -13,6 +13,7 @@ from tqdm import tqdm
 openai.api_key = "YOUR OPENAI API KEY"
 
 PYTHON_INTERPRETER_PATH = "path/to/your/python/environment"
+TMDB_API_KEY = "PUT/YOUR/API/KEY/HERE"
 
 
 def calculate_similarity(path1, path2):
@@ -172,8 +173,11 @@ def run_assembler(
     ]
     main_code = single_run(
         construct_input_message(
-            prompt=ASSEMBLY_MAIN_FUNCTION_TEMPLATE.format(
-                question=question, code_solution=code_solution, api_doc=api_doc
+            prompt=REUSABLE_ASSEMBLY_MAIN_FUNCTION_TEMPLATE.format(
+                question=question,
+                code_solution=code_solution,
+                api_doc=api_doc,
+                api_key=TMDB_API_KEY,
             )
         )
     )

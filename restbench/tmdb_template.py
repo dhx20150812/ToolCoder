@@ -501,7 +501,7 @@ ASSEMBLY_MAIN_FUNCTION_TEMPLATE = """You are a coding assistant specializing in 
      - `headers`: A mandatory dictionary containing the following:
        ```python
        headers = {{
-           "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3YzAwOGVmMzM3NGJjOWU1NzY5ZDM0NDdlODRmZTk2NiIsIm5iZiI6MTcyNDA1Mjk4OS42MTIwNzksInN1YiI6IjY2M2M4Y2FiMDRlNGI5YjRjZDdmYmVkNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.RSQEZ6FRNzrhgkrFEElXy4hbD4ylu9zHPW0YtfTPoEI"
+           "Authorization": "{api_key}"
        }}
        ```
    - Ensure the function returns parsed response data in a usable format.
@@ -573,7 +573,7 @@ if __name__ == "__main__":
 import requests
 
 headers = {{
-   "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3YzAwOGVmMzM3NGJjOWU1NzY5ZDM0NDdlODRmZTk2NiIsIm5iZiI6MTcyNDA1Mjk4OS42MTIwNzksInN1YiI6IjY2M2M4Y2FiMDRlNGI5YjRjZDdmYmVkNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.RSQEZ6FRNzrhgkrFEElXy4hbD4ylu9zHPW0YtfTPoEI"
+   "Authorization": "{api_key}"
 }}
 
 def search_tv_shows(query, first_air_date_year=None, include_adult=False, language="en-US", page=1, year=None):
@@ -719,7 +719,7 @@ REUSABLE_ASSEMBLY_MAIN_FUNCTION_TEMPLATE = """You are a coding assistant special
        - `headers`: A mandatory dictionary containing the following:
          ```python
          headers = {{
-             "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3YzAwOGVmMzM3NGJjOWU1NzY5ZDM0NDdlODRmZTk2NiIsIm5iZiI6MTcyNDA1Mjk4OS42MTIwNzksInN1YiI6IjY2M2M4Y2FiMDRlNGI5YjRjZDdmYmVkNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.RSQEZ6FRNzrhgkrFEElXy4hbD4ylu9zHPW0YtfTPoEI"
+             "Authorization": "{api_key}"
          }}
          ```
        - Ensure the function returns parsed response data in a usable format.
@@ -792,7 +792,7 @@ if __name__ == "__main__":
 import requests
 
 headers = {{
-   "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3YzAwOGVmMzM3NGJjOWU1NzY5ZDM0NDdlODRmZTk2NiIsIm5iZiI6MTcyNDA1Mjk4OS42MTIwNzksInN1YiI6IjY2M2M4Y2FiMDRlNGI5YjRjZDdmYmVkNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.RSQEZ6FRNzrhgkrFEElXy4hbD4ylu9zHPW0YtfTPoEI"
+   "Authorization": "{api_key}"
 }}
 
 def search_tv_shows(query, first_air_date_year=None, include_adult=False, language="en-US", page=1, year=None):
